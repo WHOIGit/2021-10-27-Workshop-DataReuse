@@ -58,6 +58,8 @@ workshop is only open to people from a particular institution.
 {% include dc/who.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
+{% elsif site.carpentry == "incubator" %}
+{% include data_reuse/who.html %}
 {% endif %}
 
 {% comment %}
