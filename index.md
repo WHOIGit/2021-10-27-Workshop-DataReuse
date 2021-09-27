@@ -318,13 +318,14 @@ further. To use this custom schedule here, replace the block
 of code below the Schedule `<h2>` header below with
 `{% include custom-schedule.html %}`.
 
-Below you can find the workshop outline. Please go to the [the lesson homepage]({{ site.incubator_lesson_site }})
-for an interactive page of the whole workshop
+Below you can find the workshop outline. Please go to the  [the lesson homepage]({{ site.incubator_lesson_site }})
+for an interactive page of the whole workshop.
+{{ site.incubator_lesson_site }}
 {% endcomment %}
 
 <h2 id="schedule">Schedule</h2>
-Below you can find the workshop outline. Please go to the [the lesson homepage](https://k-rns.github.io/workshop_data_reuse/)
-for an interactive page of the whole workshop
+Below you can find the workshop outline. Please go to the <a href="{{ site.incubator_lesson_site }}">the lesson landing page</a>
+for an interactive page of the whole workshop. 
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
