@@ -23,6 +23,13 @@ eventbrite:   # optional: alphanumeric key for Eventbrite registration, e.g., "1
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
 
+<h2 id="lesson_intro">Is this class for me?</h2>
+
+{% comment %}
+This is an INTRODUCTION to the LESSON and why the people should care about this workshop. Write a good pitch here.
+{% endcomment %}
+{% include data_reuse/intro_lesson.html %}
+
 
 <h2 id="general">General Information</h2>
 
@@ -39,7 +46,7 @@ the pitch.
 {% elsif site.carpentry == "lc" %}
 {% include lc/intro.html %}
 {% elsif site.carpentry == "incubator" %}
-{% include data_reuse/intro.html %}
+{% include data_reuse/intro_oiwg.html %}
 {% endif %}
 
 {% if site.pilot %}
