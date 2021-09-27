@@ -23,7 +23,7 @@ eventbrite:   # optional: alphanumeric key for Eventbrite registration, e.g., "1
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
 
-<h2 id="lesson_intro">Accelerating Science through Data Reuse?</h2>
+<h2 id="lesson_intro">Accelerating Science through Data Reuse</h2>
 
 {% comment %}
 This is an INTRODUCTION to the LESSON and why the people should care about this workshop. Write a good pitch here.
