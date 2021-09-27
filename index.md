@@ -86,8 +86,13 @@ This block includes the Eventbrite registration widget if
 are not using Eventbrite, or leave it in, since it will not be
 displayed if the 'eventbrite' field in the header is not set.
 {% endcomment %}
-#{% if page.eventbrite %}
-# Not eventbrite, but own registration form:
+
+{% comment %}
+{% if page.eventbrite %}
+Not eventbrite, but own registration form:
+{% endcomment %}
+
+Not eventbrite, but own registration form:
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
 <iframe
@@ -97,8 +102,10 @@ displayed if the 'eventbrite' field in the header is not set.
   height="280px"
   scrolling="auto">
 </iframe>
-#{% endif %}
 
+{% comment %}
+{% endif %}
+{% endcomment %}
 
 <h2 id="general">General Information</h2>
 
@@ -107,13 +114,17 @@ INTRODUCTION
 
 Edit the general explanatory paragraph below if you want to change
 the pitch.
+
 {% endcomment %}
+
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/intro.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/intro.html %}
+{% if site.carpentry == "incubator" %}
+{% include data_reuse/intro.html %}
 {% endif %}
 
 {% if site.pilot %}
@@ -126,12 +137,16 @@ AUDIENCE
 Explain who your audience is.  (In particular, tell readers if the
 workshop is only open to people from a particular institution.
 {% endcomment %}
+
+Explanation about the audience
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/who.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
+{% if site.carpentry == "incubator" %}
+{% include data_reuse/who.html %}
 {% endif %}
 
 {% comment %}
