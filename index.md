@@ -87,11 +87,7 @@ are not using Eventbrite, or leave it in, since it will not be
 displayed if the 'eventbrite' field in the header is not set.
 {% endcomment %}
 
-{% comment %}
 {% if page.eventbrite %}
-Not eventbrite, but own registration form:
-{% endcomment %}
-
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
 <iframe
@@ -101,10 +97,8 @@ Not eventbrite, but own registration form:
   height="280px"
   scrolling="auto">
 </iframe>
-
-{% comment %}
 {% endif %}
-{% endcomment %}
+
 
 <h2 id="general">General Information</h2>
 
