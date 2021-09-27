@@ -24,26 +24,6 @@ eventbrite:   # optional: alphanumeric key for Eventbrite registration, e.g., "1
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
 
 
-{% comment %}
-EVENTBRITE
-
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-
-<strong>Please open the link below with your whoi account. Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
-<iframe
-  src="https://docs.google.com/presentation/d/1GkIURS_6SPDhLuzYFa6awBUWlgOTjjT4ylvy-RVy6d0/edit#slide=id.p"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
-
-
 <h2 id="general">General Information</h2>
 
 {% comment %}
@@ -231,6 +211,20 @@ Edit the text to match who can attend the workshop. For instance:
     <strong>Who can attend?:</strong>
     This workshop is targeted towards the technical WHOI staff in order to improve project efficiency and build technical skills. It will only be held for 20 people at a time through an online Zoom meeting. Registration is required. Please contact stace@whoi.edu for availability.
 </p>
+
+
+{% comment %}
+REGISTRATION
+
+This is a WHOI specific section added to add the registration link. 
+The registration link has been set up in google drive by the workshop organisers rather than using the carpentries specific eventbrite registration.
+{% endcomment %}  
+
+<p id="registration">
+    <strong>How to register?:</strong>
+    Please register using the following <a href="https://docs.google.com/presentation/d/1GkIURS_6SPDhLuzYFa6awBUWlgOTjjT4ylvy-RVy6d0/edit#slide=id.p">link</a>. 
+</p>
+
 
 
 <hr/>
