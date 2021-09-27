@@ -92,7 +92,6 @@ displayed if the 'eventbrite' field in the header is not set.
 Not eventbrite, but own registration form:
 {% endcomment %}
 
-Not eventbrite, but own registration form:
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
 <iframe
@@ -138,7 +137,6 @@ Explain who your audience is.  (In particular, tell readers if the
 workshop is only open to people from a particular institution.
 {% endcomment %}
 
-Explanation about the audience
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
 {% elsif site.carpentry == "dc" %}
