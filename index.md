@@ -138,16 +138,16 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong>
-  {% if online == "false" %}
-    Participants must bring a laptop with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
-  {% else %}
-    Participants must have access to a computer with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
-  {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  <strong>Requirements:</strong> 
+  <ul>
+    <li>Participants must bring a laptop with a Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.</li>
+    <li>A few specific software packages need to be installed (listed in the "Setup page" <a href="#setup">below</a>). We will be holding an on-line data lab to help you install these packages if necessary.</li>
+    <li> Participants will need to join a Zoom video conference. Installing free zoom conference software is recommended.  You will not need a paid account. See <a href="https://support.zoom.us/hc/en-us/articles/201362193-Joining-a-Meeting">Joining a meeting from Zoom Help Center</a></li>
+    <li>This is an introduction to Python and data tables designed for participants with no programming experience.
+</li>
+   </ul>   
 </p>
+
 
 {% comment %}
 ACCESSIBILITY
@@ -225,12 +225,13 @@ Edit the text to match who can attend the workshop. For instance:
 - This workshop is open to the public.
 - If you are interested in attending this workshop, contact me@example.com
   for more information
+{% endcomment %}  
 
 <p id="who-can-attend">
     <strong>Who can attend?:</strong>
-    This workshop is open to ....
+    This workshop is targeted towards the technical WHOI staff in order to improve project efficiency and build technical skills. It will only be held for 20 people at a time through an online Zoom meeting. Registration is required. Please contact stace@whoi.edu for availability.
 </p>
-{% endcomment %}
+
 
 <hr/>
 
