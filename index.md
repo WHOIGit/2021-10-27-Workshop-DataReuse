@@ -91,6 +91,8 @@ the pitch.
 {% include dc/intro.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/intro.html %}
+{% elsif site.carpentry == "incubator" %}
+{% include data_reuse/intro.html %}
 {% endif %}
 
 {% if site.pilot %}
