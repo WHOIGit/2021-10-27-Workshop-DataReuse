@@ -20,6 +20,7 @@ collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g.
 eventbrite:   # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
+
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
 
 {% comment %}
@@ -35,6 +36,8 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 {% comment %}
 8< ============= For a workshop delete from here =============
 For a workshop please delete the following block until the next dashed-line
+{% endcomment %}
+
 
 <div class="alert alert-danger">
 This is the workshop template. Delete these lines and use it to
@@ -50,6 +53,8 @@ For workshops teaching a lesson in The Carpentries Incubator,
 remember to uncomment the `incubator_lesson_site`, `incubator_pre_survey`, and `incubator_post_survey`
 fields in `_config.yml`
 </div>
+
+{% comment %}
 8< ============================= until here ==================
 {% endcomment %}
 
@@ -77,7 +82,6 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 </div>
 {% endunless %}
 {% endif %}
-
 
 {% comment %}
 EVENTBRITE
@@ -107,17 +111,13 @@ INTRODUCTION
 
 Edit the general explanatory paragraph below if you want to change
 the pitch.
-
 {% endcomment %}
-
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/intro.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/intro.html %}
-{% if site.carpentry == "incubator" %}
-{% include data_reuse/intro.html %}
 {% endif %}
 
 {% if site.pilot %}
@@ -130,15 +130,12 @@ AUDIENCE
 Explain who your audience is.  (In particular, tell readers if the
 workshop is only open to people from a particular institution.
 {% endcomment %}
-
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/who.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
-{% if site.carpentry == "incubator" %}
-{% include data_reuse/who.html %}
 {% endif %}
 
 {% comment %}
@@ -471,3 +468,4 @@ Please check the "Setup" page of
 [the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
 to obtain the software and data you will need to follow the lesson.
 {% endif %}
+
