@@ -52,14 +52,14 @@ pilot: false
 # Most workshops don't use extra pages. More information about extra
 # pages are included in the README:
 # https://github.com/carpentries/workshop-template#creating-extra-pages
-title: "Workshop Title"
+title: "Reusing online data: Case study with ERDDAP API and Python"
 
 #------------------------------------------------------------
 # Incubator workshop settings (only relevant for workshops teaching a lesson
 # in The Carpentries Incubator).
 #
 # For an Incubator workshop, uncomment the line below and add the URL of the lesson site.
-incubator_lesson_site: "https://github.com/k-rns/workshop_data_reuse"
+incubator_lesson_site: "https://k-rns.github.io/workshop_data_reuse/"
 #
 # For an Incubator workshop, uncomment the line below and add the URL of your pre-workshop survey
 incubator_pre_survey: "put the URL of your pre-workshop survey here"
