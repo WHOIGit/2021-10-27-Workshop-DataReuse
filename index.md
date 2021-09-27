@@ -14,10 +14,10 @@ humantime: "8:30 - 12:30 EST"    # human-readable times for the workshop e.g., "
 startdate: 2021-10-27      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2021-10-27        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Karen Soenen"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["AMber York", "Stace Beaulieu"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Amber York", "Stace Beaulieu"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["ksoenen@whoi.edu","adyork@whoi.edu", "stace@whoi.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-eventbrite: 1234          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -86,17 +86,18 @@ This block includes the Eventbrite registration widget if
 are not using Eventbrite, or leave it in, since it will not be
 displayed if the 'eventbrite' field in the header is not set.
 {% endcomment %}
-{% if page.eventbrite %}
+#{% if page.eventbrite %}
+# Not eventbrite, but own registration form:
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
 <iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+  src="https://docs.google.com/presentation/d/1GkIURS_6SPDhLuzYFa6awBUWlgOTjjT4ylvy-RVy6d0/edit#slide=id.p"
   frameborder="0"
   width="100%"
   height="280px"
   scrolling="auto">
 </iframe>
-{% endif %}
+#{% endif %}
 
 
 <h2 id="general">General Information</h2>
