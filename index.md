@@ -320,7 +320,8 @@ of code below the Schedule `<h2>` header below with
 {% endcomment %}
 
 <h2 id="schedule">Schedule</h2>
-
+Below you can find the workshop outline. Please go to the [the lesson homepage]({{ site.incubator_lesson_site }})
+for an interactive page of the whole workshop
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
@@ -329,7 +330,6 @@ of code below the Schedule `<h2>` header below with
 {% include lc/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
 {% include data_reuse/schedule.html %}
-Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
 {% endif %}
 
 {% comment %}
